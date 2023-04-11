@@ -26,3 +26,13 @@ var c = 9
 //create a string values and asign a value
 var myFirstName = "Maria";
 var myLastName = "Rios Navarro";
+
+// Only change code below this line
+var d = 5;
+var e = 10;
+var f ="I am a";
+// Only change code above this line
+
+d= d + 1;
+e = e + 5;
+f = f + " String!";
