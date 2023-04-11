@@ -15,3 +15,6 @@ multi-line comment */
 
 //create the variable with My Name
 var myName
+//asig the value 7 to the variable a
+var a;
+a=7;
