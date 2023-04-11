@@ -18,3 +18,6 @@ var myName
 //asig the value 7 to the variable a
 var a;
 a=7;
+var b;
+b=7;
+b=a;
