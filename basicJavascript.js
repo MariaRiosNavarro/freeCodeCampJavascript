@@ -21,3 +21,5 @@ a=7;
 var b;
 b=7;
 b=a;
+//asign a value at the first
+var c = 9
