@@ -13,3 +13,5 @@ You can make a multi-line comment beginning with /* and ending with */
 /* This is a
 multi-line comment */
 
+//create the variable with My Name
+var myName
