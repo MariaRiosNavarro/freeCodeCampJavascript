@@ -71,10 +71,11 @@ myVarA++;
 //Decrement a Number with JavaScript
 let myVarB = 11;
 myVarB--;
-//Create Decimal Numbers with JavaScript
+//Create Decimal Numbers with JavaScript (float numbers)
 const ourDecimal = 5.7;
 const myDecimal= 5.7;
-
+//Multiply Two Decimals with JavaScript
+const productDecimal = 2.0 * 2.5;
 
 
 
