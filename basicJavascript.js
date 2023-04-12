@@ -51,3 +51,9 @@ titleCaseOver = 9000;
 //introducing the difference between var and let. (let can not be more times declared, you can not overridden: important ES6)
 let catName = "Oliver";
 let catSound = "Meow!";
+//introduce the difference between let and const. With Const you can not reassigning the value. The console will display an error due to reassigning the value, const is READ-ONLY and can not change
+// It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
+const FCC = "freeCodeCamp"; 
+let fact = "is cool!"; 
+fact = "is awesome!";
+console.log(FCC, fact); 
