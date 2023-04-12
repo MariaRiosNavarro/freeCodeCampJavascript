@@ -113,3 +113,6 @@ j *= 10;
 g /= 12;
 h /= 4;
 j /= 11;
+
+// Escaping Literal Quotes in Strings: with \ beforr " or '. In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
