@@ -167,3 +167,9 @@ const myStrE = "This is the start. " + "This is the end."
 let myStrF;
 myStrF = "This is the first sentence. ";
 myStrF+= "This is the second sentence.";
+
+// Constructing Strings with Variables
+// Sometimes you will need to build a string. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
+
+const myNameA = "Maria";
+const myStrG = "My Name is" + myNameA + " and I am well!";
