@@ -48,4 +48,6 @@ var titleCaseOver;
 studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
-
+//introducing the difference between var and let. (let can not be more times declared, you can not overridden: important ES6)
+let catName = "Oliver";
+let catSound = "Meow!";
