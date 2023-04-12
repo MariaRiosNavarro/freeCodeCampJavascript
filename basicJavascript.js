@@ -201,3 +201,9 @@ firstLetterOfLastNameB = lastNameB[0]
 
 let myStrI = "Jello World";
 myStrI = "Hello World";
+
+// Use Bracket Notation to Find the Nth Character in a String
+
+const lastNameC = "Navarro";
+const thirdLetterOfLastName = lastNameC[2];
+console.log(thirdLetterOfLastName);
