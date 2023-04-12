@@ -92,3 +92,7 @@ j += 7;
 g -= 6;
 h -= 15;
 j -= 1;
+//Compound Assignment With Augmented Multiplication: *= Operator
+g *= 5;
+h *= 3;
+j *= 10;
