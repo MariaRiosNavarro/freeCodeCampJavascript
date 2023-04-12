@@ -218,3 +218,13 @@ console.log(lastNameE[lastNameE.length-1]);
 
 const secondToLastLetterOfLastName = lastNameE [lastNameE.length-2];
 console.log(secondToLastLetterOfLastName);
+
+
+// Word Blanks exercise. You will need to use the string concatenation operator + to build a new string, using the provided variables:
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+const wordBlanks = "Your "+ myAdjective + " "+ myNoun + " "+ myVerb + " "+ myAdverb; 
+console.log(wordBlanks);
