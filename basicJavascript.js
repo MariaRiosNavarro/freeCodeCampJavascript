@@ -179,3 +179,12 @@ const myStrG = "My Name is" + myNameA + " and I am well!";
 const someAdjective = "cool";
 let myStrH = "Learning to code is ";
 myStrH += someAdjective;
+
+// Find the Length of a String
+// You can find the length of a String value by writing .length after the string. . Note that the space character is also counted
+
+let lastNameLength = 0;
+const lastNameA = "Lovelace";
+
+lastNameLength = lastNameA.length;
+
