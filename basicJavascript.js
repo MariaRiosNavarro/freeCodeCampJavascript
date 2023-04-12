@@ -78,6 +78,7 @@ const myDecimal= 5.7;
 const productDecimal = 2.0 * 2.5;
 //Divide One Decimal by Another with JavaScript
 const quotientDecimal = 4.4 / 2.0;
-
+//Finding a Remainder in JavaScript % (Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.)
+const remainder = 11%3
 
 
