@@ -188,3 +188,4 @@ const lastNameA = "Lovelace";
 
 lastNameLength = lastNameA.length;
 
+
