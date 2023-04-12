@@ -206,4 +206,17 @@ myStrI = "Hello World";
 
 const lastNameC = "Navarro";
 const thirdLetterOfLastName = lastNameC[2];
-console.log(thirdLetterOfLastName);
+
+// Use Bracket Notation to Find the Last Character in a String with .length-1
+const lastNameD = "Ripolles";
+const lastLetterOfLastName = lastNameD[lastNameD.length-1];
+console.log(lastLetterOfLastName);
+const lastNameE= "Velasco";
+console.log(lastNameE[lastNameE.length-1]);
+
+// Use Bracket Notation to Find the Nth-to-Last Character in a String. Works like above
+
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName [lastName.length-2]
