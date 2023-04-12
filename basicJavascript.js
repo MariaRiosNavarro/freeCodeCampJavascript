@@ -164,6 +164,6 @@ const myStrE = "This is the start. " + "This is the end."
 
 // Concatenating Strings with the Plus Equals Operator. Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself
 
-let myStrE;
-myStrE = "This is the first sentence. ";
-myStrE += "This is the second sentence.";
+let myStrF;
+myStrF = "This is the first sentence. ";
+myStrF+= "This is the second sentence.";
