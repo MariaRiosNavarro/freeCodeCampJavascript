@@ -173,3 +173,9 @@ myStrF+= "This is the second sentence.";
 
 const myNameA = "Maria";
 const myStrG = "My Name is" + myNameA + " and I am well!";
+
+//Appending Variables to Strings with +=
+
+const someAdjective = "cool";
+let myStrH = "Learning to code is ";
+myStrH += someAdjective;
