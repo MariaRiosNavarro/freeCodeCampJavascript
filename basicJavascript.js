@@ -196,3 +196,8 @@ const lastNameB = "Rios";
 firstLetterOfLastNameB = lastNameB[0]
 
 
+// Understand String Immutability. We can asign a new value but not change the value.
+// also we can not do let myStr = "Bob"; myStr[0] = "J"; only we can asign a new value:let myStr = "Bob"; myStr = "Job";
+
+let myStrI = "Jello World";
+myStrI = "Hello World";
