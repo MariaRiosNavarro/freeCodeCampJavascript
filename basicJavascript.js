@@ -188,4 +188,11 @@ const lastNameA = "Lovelace";
 
 lastNameLength = lastNameA.length;
 
+// Use Bracket Notation to Find the First Character in a String.Bracket notation is a way to get a character at a specific index within a string []. Zero-based indexing counting start at 0
+// find the 1st letter od lastNameB
+
+let firstLetterOfLastNameB = "";
+const lastNameB = "Rios";
+firstLetterOfLastNameB = lastNameB[0]
+
 
