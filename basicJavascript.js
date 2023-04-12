@@ -35,9 +35,7 @@ d= d + 1;
 e = e + 5;
 f = f + " String!";
 
-//use camelCase
-
-// Variable declarations
+//use camelCase-Variable declarations
 var studlyCapVar;
 var properCamelCase;
 var titleCaseOver;
