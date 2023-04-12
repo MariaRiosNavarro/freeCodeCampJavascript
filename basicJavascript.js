@@ -121,3 +121,39 @@ const myStrB = "I am a \"double quoted\" string inside \"double quotes\".";
 // Sometimes we have an ' in the middle of the sentence and if we do not mark it before with \ it will give us an error
 
 const myStrC = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+// Escape Sequences in Strings
+// Assign the following three lines of text into the single variable myStr using escape sequences.
+
+/* FirstLine
+    \SecondLine
+ThirdLine
+
+You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.*/
+
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"
+
+//Explanation:
+/* Escape sequences allow you to use characters you may not otherwise be able to use in a string.
+
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\t	tab
+\r	carriage return
+\b	backspace
+\f	form feed
+Note that the backslash itself must be escaped in order to display as a backslash.
+
+In our example we need:
+After -FirstLine- we need
+a new line with: \n
+a Tab with: \t
+a \ with \\
+than is -SecondLine-
+after that we need a new line with : \n
+and -ThirdLine_
+
+*/
