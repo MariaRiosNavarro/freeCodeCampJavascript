@@ -115,9 +115,9 @@ h /= 4;
 j /= 11;
 
 // Escaping Literal Quotes in Strings: with \ beforr " or '. In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
-const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+const myStrB = "I am a \"double quoted\" string inside \"double quotes\".";
 
 // Quoting Strings with Single Quotes. String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote
 // Sometimes we have an ' in the middle of the sentence and if we do not mark it before with \ it will give us an error
 
-const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+const myStrC = '<a href="http://www.example.com" target="_blank">Link</a>';
