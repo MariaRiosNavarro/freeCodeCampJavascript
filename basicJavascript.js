@@ -88,3 +88,7 @@ let j = 12;
 g += 12;
 h += 9;
 j += 7;
+//Compound Assignment With Augmented Subtraction: -= Operator
+g -= 6;
+h -= 15;
+j -= 1;
