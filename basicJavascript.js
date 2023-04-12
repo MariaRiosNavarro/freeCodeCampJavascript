@@ -131,7 +131,7 @@ ThirdLine
 
 You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.*/
 
-const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"
+const myStrD = "FirstLine\n\t\\SecondLine\nThirdLine"
 
 //Explanation:
 /* Escape sequences allow you to use characters you may not otherwise be able to use in a string.
@@ -157,3 +157,7 @@ after that we need a new line with : \n
 and -ThirdLine_
 
 */
+
+// Concatenating Strings with Plus Operator. Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+const myStrE = "This is the start. " + "This is the end."
