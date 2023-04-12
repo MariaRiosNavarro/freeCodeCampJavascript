@@ -27,7 +27,6 @@ var c = 9
 var myFirstName = "Maria";
 var myLastName = "Rios Navarro";
 
-
 var d = 5;
 var e = 10;
 var f ="I am a";
