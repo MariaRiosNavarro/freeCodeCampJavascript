@@ -96,3 +96,7 @@ j -= 1;
 g *= 5;
 h *= 3;
 j *= 10;
+//Compound Assignment With Augmented Division: /=Operator
+g /= 12;
+h /= 4;
+j /= 11;
