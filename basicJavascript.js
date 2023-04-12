@@ -80,5 +80,11 @@ const productDecimal = 2.0 * 2.5;
 const quotientDecimal = 4.4 / 2.0;
 //Finding a Remainder in JavaScript % (Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.)
 const remainder = 11%3
-
-
+//Compound Assignment With Augmented Addition: += Operator
+let g = 3;
+let h = 17;
+let j = 12;
+//Use += operator
+g += 12;
+h += 9;
+j += 7;
