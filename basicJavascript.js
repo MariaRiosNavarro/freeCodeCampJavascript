@@ -313,7 +313,11 @@ function functionWithArgs (numberA, numberB){
   }
   functionWithArgs (-3, 10);
 
-
+// Return a Value from a Function with Return .You can use a return statement to send a value back out of a function.
+function timesFive(numberC){
+    return numberC*5;
+  }
+  timesFive(7);
 
 
 
