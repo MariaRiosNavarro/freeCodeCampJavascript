@@ -244,3 +244,24 @@ console.log(myDataA);
 const myArrayD = [18, 64, 99];
 myArrayD[0]=45;
 console.log(myArrayD);
+
+// Access Multi-Dimensional Arrays With Indexes
+// One way to think of a multi-dimensional array, is as an array of arrays. When you use brackets to access your array, the first set of brackets refers to the entries in the outermost (the first level) array, and each additional pair of brackets refers to the next level of entries inside.
+
+const myArrayE = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  
+  const myDataB = myArrayE[2][1];
+  const myDataC = myArrayE[3][0][1];
+
+console.log(myDataB);
+console.log(myDataC);
+//Testing .push 
+const newArrayA=[];
+newArrayA.push=myDataB;
+newArrayA.push=myDataC;
+console.log(newArrayA);
