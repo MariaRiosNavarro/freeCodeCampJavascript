@@ -287,3 +287,9 @@ console.log(removedFromMyArrayA);
 const myArrayI = [["John", 23], ["dog", 3]];
 const removedFromMyArrayB= myArrayI.shift();
 console.log(removedFromMyArrayB);
+
+// .unshift() adds the element at the beginning of the array.
+const myArrayJ = [["John", 23], ["dog", 3]];
+myArrayJ.shift();
+myArrayJ.unshift(["Paul", 35]);
+console.log(myArrayJ);
