@@ -330,7 +330,7 @@ function fun1() {
 oopsGlobal=5;
 }
 
-// Only change code above this line
+// ----- Only change code above this line
 
 function fun2() {
   let outputA = "";
@@ -342,6 +342,27 @@ function fun2() {
   }
   console.log(outputA);
 }
+
+// Local Scope and Functions
+// Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
+
+// the use of a variable that has been defined in a function, outside this function (e.g. in a console.log) will give an error. Exercise
+
+function myLocalScope() {
+    // ----Only change code below this line
+    const myVar="hola";
+    console.log('inside myLocalScope', myVar);
+  }
+  myLocalScope();
+  
+  // ----ORun and check the console
+  // ----OmyVar is not defined outside of myLocalScope
+
+  console.log('outside myLocalScope', myVar);//ERROR IN THE CONSOLE
+
+  
+
+
 
 
 
