@@ -374,7 +374,7 @@ function myOutfit() {
 }
 
 myOutfit(); //return sweater, the local variable takes precedence over the global variable
-
+console.log(myOutfit());
 
 
 
