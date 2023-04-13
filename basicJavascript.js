@@ -280,7 +280,10 @@ console.log(myArrayF);
 // .pop() removes the last element from an array and returns that element.
 
 const myArrayH = [["John", 23], ["cat", 2]];
-const removedFromMyArray= myArrayH.pop();
-console.log(removedFromMyArray);
+const removedFromMyArrayA= myArrayH.pop();
+console.log(removedFromMyArrayA);
 
-
+// .shift() removes the first element instead of the last
+const myArrayI = [["John", 23], ["dog", 3]];
+const removedFromMyArrayB= myArrayI.shift();
+console.log(removedFromMyArrayB);
