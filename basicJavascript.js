@@ -260,8 +260,4 @@ const myArrayE = [
 
 console.log(myDataB);
 console.log(myDataC);
-//Testing .push 
-const newArrayA=[];
-newArrayA.push=myDataB;
-newArrayA.push=myDataC;
-console.log(newArrayA);
+
