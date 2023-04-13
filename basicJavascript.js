@@ -262,7 +262,7 @@ console.log(myDataB);
 console.log(myDataC);
 
 
-// Manipulate Arrays With push Method
+// Manipulate Arrays With push Method (add)
 // An easy way to append data to the end of an array is via the push() function.
 
 //one example with the const of before
