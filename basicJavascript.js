@@ -265,14 +265,15 @@ console.log(myDataC);
 // Manipulate Arrays With push Method
 // An easy way to append data to the end of an array is via the push() function.
 
-//one example
+//one example with the const of before
 
 const myArrayG= [];
 myArrayG.push(myDataB,myDataC);
 console.log(myArrayG);
 
-//two example
+//another example
 
 const myArrayF = [["John", 23], ["cat", 2]];
 myArrayF.push(["dog",3]);
+console.log(myArrayF);
 
