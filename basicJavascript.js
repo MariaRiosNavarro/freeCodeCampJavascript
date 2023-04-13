@@ -277,3 +277,10 @@ const myArrayF = [["John", 23], ["cat", 2]];
 myArrayF.push(["dog",3]);
 console.log(myArrayF);
 
+// .pop() removes the last element from an array and returns that element.
+
+const myArrayH = [["John", 23], ["cat", 2]];
+const removedFromMyArray= myArrayH.pop();
+console.log(removedFromMyArray);
+
+
