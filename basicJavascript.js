@@ -293,3 +293,8 @@ const myArrayJ = [["John", 23], ["dog", 3]];
 myArrayJ.shift();
 myArrayJ.unshift(["Paul", 35]);
 console.log(myArrayJ);
+
+//Exercise: Shopping List
+const myListA = [];
+myListA.push(["Chocolate Bar", 15], ["apple", 1], ["banana", 2], ["salad", 3], ["juice", 4]);
+console.log(myListA)
