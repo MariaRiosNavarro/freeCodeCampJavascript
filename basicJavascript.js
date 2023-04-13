@@ -355,14 +355,25 @@ function myLocalScope() {
   }
   myLocalScope();
   
-  // ----ORun and check the console
-  // ----OmyVar is not defined outside of myLocalScope
+  // ----Run and check the console
+  // ----myVar is not defined outside of myLocalScope
 
-  console.log('outside myLocalScope', myVar);//ERROR IN THE CONSOLE
-
-  
+  //console.log('outside myLocalScope', myVar); --->ERROR IN THE CONSOLE (i change it to comment)
 
 
+// Global vs. Local Scope in Functions
+// It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable. Exercise:
+
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+    const outerWear= "sweater";
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit(); //return sweater, the local variable takes precedence over the global variable
 
 
 
