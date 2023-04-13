@@ -239,3 +239,8 @@ const myArrayB =  [["so", "sa"], ["la", "lo"]];
 const myArrayC = [50, 60, 70];
 const myDataA = myArrayC[0];
 console.log(myDataA);
+
+// Modify Array Data With Indexes. Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.There shouldn't be any spaces between the array name and the square brackets
+const myArrayD = [18, 64, 99];
+myArrayD[0]=45;
+console.log(myArrayD);
