@@ -231,3 +231,6 @@ console.log(wordBlanks);
 
 // You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry
 const myArrayA = ["hello", 2];
+
+// multi-dimensional array: Nest one Array within Another Array
+const myArrayB =  [["so", "sa"], ["la", "lo"]];
