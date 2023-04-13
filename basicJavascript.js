@@ -319,6 +319,32 @@ function timesFive(numberC){
   }
   console.log(timesFive(300));
 
+//   Global Scope and Functions
+//   In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code. You should always declare your variables with let or const.Exercise:
+
+// ----Declare the myGlobal variable below this line
+let myGlobal= 10;
+
+function fun1() {
+  //---- Assign 5 to oopsGlobal here
+oopsGlobal=5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  let outputA = "";
+  if (typeof myGlobal != "undefined") {
+    outputA += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    outputA += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(outputA);
+}
+
+
+
 
 
 
