@@ -317,7 +317,7 @@ function functionWithArgs (numberA, numberB){
 function timesFive(numberC){
     return numberC*5;
   }
-  timesFive(7);
+  console.log(timesFive(300));
 
 
 
