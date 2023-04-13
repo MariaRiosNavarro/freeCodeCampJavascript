@@ -298,3 +298,12 @@ console.log(myArrayJ);
 const myListA = [];
 myListA.push(["Chocolate Bar", 15], ["apple", 1], ["banana", 2], ["salad", 3], ["juice", 4]);
 console.log(myListA)
+
+// Write Reusable JavaScript with Functions
+
+function reusableFunction() {
+    console.log("Hola World");
+  }
+
+  reusableFunction() ;
+
