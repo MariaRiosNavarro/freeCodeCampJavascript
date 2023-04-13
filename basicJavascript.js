@@ -304,6 +304,18 @@ console.log(myListA)
 function reusableFunction() {
     console.log("Hola World");
   }
-
   reusableFunction() ;
+
+//   Passing Values to Functions with Arguments. Parameters are variables that act as placeholders. The actual values that are input (or "passed") into a function when it is called are known as arguments. you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
+
+function functionWithArgs (numberA, numberB){
+    console.log(numberA+numberB);
+  }
+  functionWithArgs (-3, 10);
+
+
+
+
+
+
 
