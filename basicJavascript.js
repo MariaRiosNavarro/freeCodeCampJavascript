@@ -234,3 +234,8 @@ const myArrayA = ["hello", 2];
 
 // multi-dimensional array: Nest one Array within Another Array
 const myArrayB =  [["so", "sa"], ["la", "lo"]];
+
+// Access Array Data with Indexes: Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use zero-based indexing,
+const myArrayC = [50, 60, 70];
+const myDataA = myArrayC[0];
+console.log(myDataA);
