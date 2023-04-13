@@ -228,3 +228,6 @@ const myAdverb = "quickly";
 
 const wordBlanks = "Your "+ myAdjective + " "+ myNoun + " "+ myVerb + " "+ myAdverb; 
 console.log(wordBlanks);
+
+// You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry
+const myArrayA = ["hello", 2];
