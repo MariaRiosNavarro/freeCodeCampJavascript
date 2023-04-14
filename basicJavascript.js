@@ -158,29 +158,34 @@ and -ThirdLine_
 
 */
 
-// Concatenating Strings with Plus Operator. Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+// ***********The headings of each section are marked by ---- before starting.*********
+
+
+
+// ----Concatenating Strings with Plus Operator. Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
 
 const myStrE = "This is the start. " + "This is the end."
 
-// Concatenating Strings with the Plus Equals Operator. Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself
+// ----Concatenating Strings with the Plus Equals Operator. Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself
 
 let myStrF;
 myStrF = "This is the first sentence. ";
 myStrF+= "This is the second sentence.";
 
-// Constructing Strings with Variables
+// ----Constructing Strings with Variables
 // Sometimes you will need to build a string. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
 
 const myNameA = "Maria";
 const myStrG = "My Name is" + myNameA + " and I am well!";
 
-//Appending Variables to Strings with +=
+//----Appending Variables to Strings with +=
 
 const someAdjective = "cool";
 let myStrH = "Learning to code is ";
 myStrH += someAdjective;
 
-// Find the Length of a String
+// ---- .length  ----Find the Length of a String
 // You can find the length of a String value by writing .length after the string. . Note that the space character is also counted
 
 let lastNameLength = 0;
@@ -188,7 +193,7 @@ const lastNameA = "Lovelace";
 
 lastNameLength = lastNameA.length;
 
-// Use Bracket Notation to Find the First Character in a String.Bracket notation is a way to get a character at a specific index within a string []. Zero-based indexing counting start at 0
+// ----Use Bracket Notation to Find the First Character in a String.Bracket notation is a way to get a character at a specific index within a string []. Zero-based indexing counting start at 0
 // find the 1st letter od lastNameB
 
 let firstLetterOfLastNameB = "";
@@ -196,31 +201,31 @@ const lastNameB = "Rios";
 firstLetterOfLastNameB = lastNameB[0]
 
 
-// Understand String Immutability. We can asign a new value but not change the value.
+// ----Understand String Immutability. We can asign a new value but not change the value.
 // also we can not do let myStr = "Bob"; myStr[0] = "J"; only we can asign a new value:let myStr = "Bob"; myStr = "Job";
 
 let myStrI = "Jello World";
 myStrI = "Hello World";
 
-// Use Bracket Notation to Find the Nth Character in a String
+// ----Use Bracket Notation to Find the Nth Character in a String
 
 const lastNameC = "Navarro";
 const thirdLetterOfLastName = lastNameC[2];
 
-// Use Bracket Notation to Find the Last Character in a String with .length-1
+// ----Use Bracket Notation to Find the Last Character in a String with .length-1
 const lastNameD = "Ripolles";
 const lastLetterOfLastName = lastNameD[lastNameD.length-1];
 console.log(lastLetterOfLastName);
 const lastNameE= "Velasco";
 console.log(lastNameE[lastNameE.length-1]);
 
-// Use Bracket Notation to Find the Nth-to-Last Character in a String. Works like above
+//---- Use Bracket Notation to Find the Nth-to-Last Character in a String. Works like above
 
 const secondToLastLetterOfLastName = lastNameE [lastNameE.length-2];
 console.log(secondToLastLetterOfLastName);
 
 
-// Word Blanks exercise. You will need to use the string concatenation operator + to build a new string, using the provided variables:
+// ----Word Blanks exercise. You will need to use the string concatenation operator + to build a new string, using the provided variables:
 const myNoun = "dog";
 const myAdjective = "big";
 const myVerb = "ran";
@@ -229,23 +234,23 @@ const myAdverb = "quickly";
 const wordBlanks = "Your "+ myAdjective + " "+ myNoun + " "+ myVerb + " "+ myAdverb; 
 console.log(wordBlanks);
 
-// You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry
+//---- You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry
 const myArrayA = ["hello", 2];
 
-// multi-dimensional array: Nest one Array within Another Array
+// ----multi-dimensional array: Nest one Array within Another Array
 const myArrayB =  [["so", "sa"], ["la", "lo"]];
 
-// Access Array Data with Indexes: Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use zero-based indexing,
+// ----Access Array Data with Indexes: Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use zero-based indexing,
 const myArrayC = [50, 60, 70];
 const myDataA = myArrayC[0];
 console.log(myDataA);
 
-// Modify Array Data With Indexes. Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.There shouldn't be any spaces between the array name and the square brackets
+// ----Modify Array Data With Indexes. Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.There shouldn't be any spaces between the array name and the square brackets
 const myArrayD = [18, 64, 99];
 myArrayD[0]=45;
 console.log(myArrayD);
 
-// Access Multi-Dimensional Arrays With Indexes
+// ----Access Multi-Dimensional Arrays With Indexes
 // One way to think of a multi-dimensional array, is as an array of arrays. When you use brackets to access your array, the first set of brackets refers to the entries in the outermost (the first level) array, and each additional pair of brackets refers to the next level of entries inside.
 
 const myArrayE = [
@@ -262,7 +267,7 @@ console.log(myDataB);
 console.log(myDataC);
 
 
-//.push  --Manipulate Arrays With push Method (add)
+//----.push  --Manipulate Arrays With push Method (add)
 // An easy way to append data to the end of an array is via the push() function.
 
 //one example with the const of before
@@ -277,18 +282,18 @@ const myArrayF = [["John", 23], ["cat", 2]];
 myArrayF.push(["dog",3]);
 console.log(myArrayF);
 
-// .pop() --removes the last element from an array and returns that element.
+//---- .pop() --removes the last element from an array and returns that element.
 
 const myArrayH = [["John", 23], ["cat", 2]];
 const removedFromMyArrayA= myArrayH.pop();
 console.log(removedFromMyArrayA);
 
-// .shift() --removes the first element instead of the last
+//---- .shift() --removes the first element instead of the last
 const myArrayI = [["John", 23], ["dog", 3]];
 const removedFromMyArrayB= myArrayI.shift();
 console.log(removedFromMyArrayB);
 
-// .unshift() --adds the element at the beginning of the array.
+//---- .unshift() --adds the element at the beginning of the array.
 const myArrayJ = [["John", 23], ["dog", 3]];
 myArrayJ.shift();
 myArrayJ.unshift(["Paul", 35]);
@@ -299,38 +304,38 @@ const myListA = [];
 myListA.push(["Chocolate Bar", 15], ["apple", 1], ["banana", 2], ["salad", 3], ["juice", 4]);
 console.log(myListA)
 
-// Write Reusable JavaScript with Functions
+// ----Write Reusable JavaScript with Functions
 
 function reusableFunction() {
     console.log("Hola World");
   }
   reusableFunction() ;
 
-//   Passing Values to Functions with Arguments. Parameters are variables that act as placeholders. The actual values that are input (or "passed") into a function when it is called are known as arguments. you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
+// ----  Passing Values to Functions with Arguments. Parameters are variables that act as placeholders. The actual values that are input (or "passed") into a function when it is called are known as arguments. you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
 
 function functionWithArgs (numberA, numberB){
     console.log(numberA+numberB);
   }
   functionWithArgs (-3, 10);
 
-// Return a Value from a Function with Return .You can use a return statement to send a value back out of a function.
+// ----Return a Value from a Function with Return .You can use a return statement to send a value back out of a function.
 function timesFive(numberC){
     return numberC*5;
   }
   console.log(timesFive(300));
 
-//   Global Scope and Functions
+//  ---- Global Scope and Functions
 //   In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code. You should always declare your variables with let or const.Exercise:
 
-// ----Declare the myGlobal variable below this line
+// Declare the myGlobal variable below this line
 let myGlobal= 10;
 
 function fun1() {
-  //---- Assign 5 to oopsGlobal here
+  // Assign 5 to oopsGlobal here
 oopsGlobal=5;
 }
 
-// ----- Only change code above this line
+// Only change code above this line
 
 function fun2() {
   let outputA = "";
@@ -343,7 +348,7 @@ function fun2() {
   console.log(outputA);
 }
 
-// Local Scope and Functions
+// ----Local Scope and Functions
 // Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
 
 // the use of a variable that has been defined in a function, outside this function (e.g. in a console.log) will give an error. Exercise
@@ -361,7 +366,7 @@ function myLocalScope() {
   //console.log('outside myLocalScope', myVar); --->ERROR IN THE CONSOLE (i change it to comment)
 
 
-// Global vs. Local Scope in Functions
+// ----Global vs. Local Scope in Functions
 // It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable. Exercise:
 
 const outerWear = "T-Shirt";
@@ -376,7 +381,7 @@ function myOutfit() {
 myOutfit(); //return sweater, the local variable takes precedence over the global variable
 console.log(myOutfit());
 
-// Understanding Undefined Value returned from a Function
+// ----Understanding Undefined Value returned from a Function
 // A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
 //Exercise:
 let sum2 = 0;
@@ -396,7 +401,7 @@ console.log(addThree);
 console.log(addFive);
 
 
-// Assignment with a Returned Value
+// ----Assignment with a Returned Value
 // everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.
 
 let processed = 0;
@@ -409,7 +414,7 @@ function processArg(num) {
 processed = processArg(7);
 
 
-// Stand in Line
+// -----Stand in Line
 // In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
 // exercice: Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
 //           Add the number to the end of the array, then remove the first element of the array.
@@ -430,7 +435,7 @@ console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
-// Understanding Boolean Values
+// ------Understanding Boolean Values
 // Another data type is the Boolean. Booleans may only be one of two values: true or false. Note: Boolean values are never written with quotes. The strings "true" and "false" are not Boolean
 
 function welcomeToBooleans() {
@@ -441,6 +446,8 @@ function welcomeToBooleans() {
   // Only change code above this line
 }
 
+// ------Use Conditional Logic with If Statements. if statements are used to make decisions in code.The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
+// When the condition evaluates to true, the program executes the statement inside the curly braces. When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.
 
 
 
