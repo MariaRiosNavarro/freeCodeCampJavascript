@@ -378,11 +378,33 @@ console.log(myOutfit());
 
 // Understanding Undefined Value returned from a Function
 // A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+//Exercise:
+let sum2 = 0;
+function addThree() {
+  sum2 = sum2 + 3;
+}
+function addFive(){
+  sum2= sum2+5;
+}
+
+addThree();
+addFive();
+
+//I add console.log to check the terminal
+
+console.log(addThree);
+console.log(addFive);
 
 
+// Assignment with a Returned Value
+// everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.
+
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
 
 
-
-
-
+processed = processArg(7);
 
