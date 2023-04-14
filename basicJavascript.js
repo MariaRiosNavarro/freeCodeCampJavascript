@@ -506,6 +506,23 @@ function testEqual(val) {
 testEqual(10);
 console.log(testEqual(10));
 
+// ----Comparison with the Strict Equality Operator ===
+// Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+// Examples
+// 3 ===  3  // true
+// 3 === '3' // false
+
+// Setup
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);
+console.log(testStrict(10));
+
 
 
 
