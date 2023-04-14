@@ -262,7 +262,7 @@ console.log(myDataB);
 console.log(myDataC);
 
 
-// Manipulate Arrays With push Method (add)
+//.push  --Manipulate Arrays With push Method (add)
 // An easy way to append data to the end of an array is via the push() function.
 
 //one example with the const of before
@@ -277,18 +277,18 @@ const myArrayF = [["John", 23], ["cat", 2]];
 myArrayF.push(["dog",3]);
 console.log(myArrayF);
 
-// .pop() removes the last element from an array and returns that element.
+// .pop() --removes the last element from an array and returns that element.
 
 const myArrayH = [["John", 23], ["cat", 2]];
 const removedFromMyArrayA= myArrayH.pop();
 console.log(removedFromMyArrayA);
 
-// .shift() removes the first element instead of the last
+// .shift() --removes the first element instead of the last
 const myArrayI = [["John", 23], ["dog", 3]];
 const removedFromMyArrayB= myArrayI.shift();
 console.log(removedFromMyArrayB);
 
-// .unshift() adds the element at the beginning of the array.
+// .unshift() --adds the element at the beginning of the array.
 const myArrayJ = [["John", 23], ["dog", 3]];
 myArrayJ.shift();
 myArrayJ.unshift(["Paul", 35]);
