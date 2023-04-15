@@ -1447,4 +1447,25 @@ const myDogA = {
 myDogA["name"]="Happy Coder"
 // Only change code below this line
 
+// ---------Add New Properties to a JavaScript Object
+// You can add new properties to existing JavaScript objects the same way you would modify them.
+
+// Here's how we would add a bark property to ourDog:
+
+// ourDog.bark = "bow-wow";
+// or
+// ourDog["bark"] = "bow-wow";
+
+const myDogB = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDogB["bark"]="woof";
+
+console.log (myDogB);
+
+
 
