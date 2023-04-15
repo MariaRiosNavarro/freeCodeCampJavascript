@@ -1467,5 +1467,24 @@ myDogB["bark"]="woof";
 
 console.log (myDogB);
 
+// ------Delete Properties from a JavaScript Object    delete object.propiertyA   delete object["propiertyA"]
+// We can also delete properties from objects like this:
+
+// delete ourDog.bark;  -----or
+// delete ourDog["bark"];
+
+// Setup
+const myDogC = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+delete myDogC["tails"];
+console.log(myDogC);
+// Only change code below this line
+
+
 
 
