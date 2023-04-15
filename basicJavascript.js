@@ -1386,8 +1386,65 @@ const testObj2 = {
 const entreeValue = testObj2["an entree"];   // Change this line
 const drinkValue = testObj2["the drink"];    // Change this line
 
+//------Accessing Object Properties with Variables
+// Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
 
+// Here is an example of using a variable to access a property:
 
+// const dogs = {
+//   name1: "Mutt",
+//   name2: "Doberman",
+//   name3: "Beagle"
+// };
 
+// const myDog = "name2";
+// const myBreed = dogs[myDog];
+// console.log(myBreed);
+// The string Doberman would be displayed in the console.
+
+// Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name.
+
+// Setup
+const testObjC = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObjC[playerNumber];   // Change this line
+
+console.log(player);
+console.log(testObjC[16]);
+
+// ---------Updating Object Properties:   obejct.propiertyA =""  or object[propiertyA]=""
+// After you've created a JavaScript object, you can update its properties at any time just like 
+// you would update any other variable. You can use either dot or bracket notation to update.
+
+// For example, let's look at ourDog:
+
+// const ourDog = {
+//   "name": "Camper",
+//   "legs": 4,
+//   "tails": 1,
+//   "friends": ["everything!"]
+// };
+// Since he's a particularly happy dog, let's change his name to the string Happy Camper. 
+//        Here's how we update his object's name property:
+//  ourDog.name = "Happy Camper"; or ourDog["name"] = "Happy Camper"; 
+ 
+//  Now when we evaluate ourDog.name, instead of getting Camper, we'll get his new name, Happy Camper.
+
+// Setup
+const myDogA = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDogA["name"]="Happy Coder"
+// Only change code below this line
 
 
