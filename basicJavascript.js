@@ -1055,9 +1055,6 @@ function switchOfStuff(val) {
      console.log (answer);
     break;
   }
-
-
-
   // Only change code above this line
   return answer;
 }
@@ -1065,3 +1062,5 @@ function switchOfStuff(val) {
 switchOfStuff(1);  // console say stuff
 switchOfStuff("c"); // console say cat
 switchOfStuff(a); //console say stuff, becouse case values are tested with strict equality (===), also a ist no the same to "a"
+
+
