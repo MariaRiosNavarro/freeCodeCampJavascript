@@ -1014,3 +1014,54 @@ caseInSwitch(1);
 caseInSwitch(5);
 caseInSwitch(4);
 
+// ------Adding a Default Option in Switch Statements   switch(n){case"a": ;break;----default: ;break}
+// In a switch statement you may not be able to specify all possible values as case statements. Instead, you can add the default statement which will be executed if no matching case statements are found. Think of it like the final else statement in an if/else chain.
+
+// A default statement should be the last case.
+
+// switch (num) {
+//   case value1:
+//     statement1;
+//     break;
+//   case value2:
+//     statement2;
+//     break;
+// ...
+//   default:
+//     defaultStatement;
+//     break;
+// }
+
+
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+
+  switch(val){
+    case "a" :
+     answer="apple";
+     console.log(answer);
+     break;
+    case "b" :
+     answer="bird";
+     console.log(answer);
+     break;
+    case "c" :
+     answer="cat";
+     console.log(answer);
+     break;
+    default:
+     answer="stuff"
+     console.log (answer);
+    break;
+  }
+
+
+
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);  // console say stuff
+switchOfStuff("c"); // console say cat
+switchOfStuff(a); //console say stuff, becouse case values are tested with strict equality (===), also a ist no the same to "a"
