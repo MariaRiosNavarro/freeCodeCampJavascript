@@ -1113,7 +1113,7 @@ sequentialSizes(1);
 sequentialSizes(5);
 sequentialSizes(7);
 
-// Replacing If Else Chains with Switch
+// ------Replacing If Else Chains with Switch
 // If you have many options to choose from, a switch statement can be easier to write than many chained if/else if statements. The following:
 
 // if (val === 1) {
