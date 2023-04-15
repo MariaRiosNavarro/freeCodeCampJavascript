@@ -1485,6 +1485,47 @@ delete myDogC["tails"];
 console.log(myDogC);
 // Only change code below this line
 
+// ----Using Objects for Lookups
+// Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to lookup values rather than a switch statement or an if/else chain. This is most useful when you know that your input data is limited to a certain range.
 
+// Here is an example of an article object:
 
+// const article = {
+//   "title": "How to create objects in JavaScript",
+//   "link": "https:....",
+//   "author": "K H",
+//   "language": "JavaScript",
+//   "tags": "TECHNOLOGY",
+//   "createdAt": "NOVEMBER 28, 2018"
+// };
 
+// const articleAuthor = article["author"];
+// const articleLink = article["link"];
+
+// const value = "title";
+// const valueLookup = article[value];
+
+// Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+
+  const lookup ={
+   "alpha":"Adams",
+   "bravo":"Boston",
+   "charlie":"Chicago",
+   "delta": "Denver",
+   "echo": "Easy",
+   "foxtrot":"Frank",
+    "": undefined
+  }
+    result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+console.log(phoneticLookup("charlie"))
