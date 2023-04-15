@@ -1376,15 +1376,15 @@ const shirtValue = testObj.shirt;    // Change this line
 // Note that property names with spaces in them must be in quotes (single or double).
 
 // Setup
-const testObj = {
+const testObj2 = {
   "an entree": "hamburger",
   "my side": "veggies",
   "the drink": "water"
 };
 
 // Only change code below this line
-const entreeValue = testObj["an entree"];   // Change this line
-const drinkValue = testObj["the drink"];    // Change this line
+const entreeValue = testObj2["an entree"];   // Change this line
+const drinkValue = testObj2["the drink"];    // Change this line
 
 
 
