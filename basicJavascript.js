@@ -1699,3 +1699,146 @@ const myPlants = [
 const secondTree = myPlants[1].list[1];
 console.log(secondTree);
 
+// --------Exercise: Record Collection
+// You are creating a function that aids in the maintenance of a musical album collection. The collection is organized as an object that contains multiple albums which are also objects. Each album is represented in the collection with a unique id as the property name. Within each album object, there are various properties describing information about the album. Not all albums have complete information.
+
+// The updateRecords function takes 4 arguments represented by the following function parameters:
+
+// records - an object containing several individual albums
+// id - a number representing a specific album in the records object
+// prop - a string representing the name of the album’s property to update
+// value - a string containing the information used to update the album’s property
+// Complete the function using the rules below to modify the object passed to the function.
+
+// Your function must always return the entire records object.
+// If value is an empty string, delete the given prop property from the album.
+// If prop isn't tracks and value isn't an empty string, assign the value to that album's prop.
+// If prop is tracks and value isn't an empty string, add the value to the end of the album's tracks array. You need to create this array first if the album does not have a tracks property.
+// Note: A copy of the recordCollection object is used for the tests. You should not directly modify the recordCollection object.
+
+// Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+function updateRecords(records, id, prop, value) {
+  // Check if the album with the given id exists in the records object
+  if (records.hasOwnProperty(id)) {
+    // Get the album object
+    let album = records[id];
+
+    // Check if value is an empty string, if so, delete the prop property from the album
+    if (value === '') {
+      delete album[prop];
+    } else {
+      // Check if prop is 'tracks'
+      if (prop === 'tracks') {
+        // Check if the album already has a tracks property, if not, create one as an array
+        if (!album.hasOwnProperty(prop)) {
+          album[prop] = [];
+        }
+        // Add the value to the end of the album's tracks array
+        album[prop].push(value);
+      } else {
+        // Update the album's prop with the given value
+        album[prop] = value;
+      }
+    }
+  }
+
+  return records;
+}
+
+// Test the function with the provided recordCollection object
+const updatedRecordCollection = updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+console.log(updatedRecordCollection);
+
+// https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-record-collection/18261 SOLUTIONS:
+
+            //  SOLUTION A
+
+              // // function updateRecords(records, id, prop, value) {
+              //   if (value === "") {
+              //     delete records[id][prop];
+              //   } else if (prop !== "tracks" && value !== "") {
+              //     records[id][prop] = value;
+              //   } else if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
+              //     records[id][prop] = [value];
+              //   } else if (prop === "tracks" && value !== "") {
+              //     records[id][prop].push(value);
+              //   }
+              //   return records;
+              // }
+
+// Code Explanation
+// This version of the code explicitly handles every possible case with separate if clauses.
+
+// First it checks if the value is an empty string. If it is, then the prop is deleted.
+// Then, if prop is not "tracks" and the value is not an empty string. The prop is set to the value.
+// If that check doesn’t pass, it next checks if prop is equal to tracks, the value is not an empty string, and the record does not have a tracks array. The "tracks" array is initialized with the only contents being value.
+// It next checks if prop is equal to tracks, the value is not an empty string. The "tracks" array must exist because the case above was not true. The value is pushed onto the end of the "tracks" array.
+// Lastly, the entire records object is returned.
+
+            //  SOLUTION B
+            // function updateRecords(records, id, prop, value) {
+            //   if (value === '') {
+            //     delete records[id][prop];
+            //   } else if (prop === "tracks") {
+            //     records[id][prop] = records[id][prop] || []; // shortcircuit evaluation
+            //     records[id][prop].push(value);
+            //   } else {
+            //     records[id][prop] = value;
+            //   }
+            //   return records;
+            // }
+
+//  Code Explanation
+// This solution re-orders the code to make the if clauses simpler.           
+// First checks if value is a blank string. If so, then the key (prop) is removed from the object.
+// If that first check doesn’t pass, then we know that value is not a blank string. It next checks if prop is equal to "tracks". The "tracks" array is initialized if it does not exist, and then value is pushed into the tracks array. (This step uses shortcircuit evaluation)
+// If both these checks fail (meaning value is not an empty string and prop is not "tracks"), then either a new key (prop) and value (value) are added to the object, or an existing key is updated if the prop already exists.
+// Lastly, the entire records object is returned.
+// Example Run
+            
+//   updateRecords(5439, "artist", "ABBA"); runs.
+// value is not a blank string, so the first condition of the else if statement fails.
+// prop is equal to "artist", not "tracks", so the second condition of the else if statement fails.
+// in the ‘else’ clause, artist: "ABBA" is added to the 5439 id.
+
+
+            //  SOLUTION C
+
+            // function updateRecords(records, id, prop, value) {
+            //   // Access target album in record collection
+            //   const album = records[id];
+            //   // Update the album
+            //   if (value === "") {
+            //     delete album[prop];
+            //   } else if (prop !== "tracks") {
+            //     album[prop] = value;
+            //   } else {
+            //     album["tracks"] = album["tracks"] || [];
+            //     album["tracks"].push(value);
+            //   }
+            //   // Return the full collection
+            //   return records;
+            // }
+
+// Code Explanation
+// This solution uses the fact that objects are passed into functions as references to slightly simplify the solution syntax.
