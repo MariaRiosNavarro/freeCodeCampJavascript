@@ -1532,25 +1532,79 @@ console.log(phoneticLookup("charlie"))
 
 
 
-// Testing Objects for Properties  .hasOwnProperty(propname)
+// ---------Testing Objects for Properties  .hasOwnProperty(propname)
 // Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not.
 
 // Example
 
-// const myObj = {
-//   top: "hat",
-//   bottom: "pants"
-// };
+const myObj = {
+  top: "hat",
+  bottom: "pants"
+};
 
-// myObj.hasOwnProperty("top");
-// myObj.hasOwnProperty("middle");
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+
+console.log(myObj.hasOwnProperty("middle"));
+
 // The first hasOwnProperty returns true, while the second returns false.
 
+
+  // I have to mark this exercise (below) as a comment otherwise it gives an error in the command line because checkProp is not defined.
   // Check if obj has the property checkProp using hasOwnProperty
-  if (obj.hasOwnProperty(checkProp)) {
-    // If the property is found, return its value
-    return obj[checkProp];
-  } else {
-    // If the property is not found, return "Not Found"
-    return "Not Found";
-  }
+  // if (objA.hasOwnProperty(checkProp)) {     // If the property is found, return its value
+  //   return objA[checkProp];
+  // } else {
+  //   // If the property is not found, return "Not Found"
+  //   return "Not Found";
+  // }
+
+  // ----------------------------
+
+
+// --------  Manipulating Complex Objects
+// Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects.
+
+// Here's an example of a complex data structure:
+
+// const ourMusic = [
+//   {
+//     "artist": "Daft Punk",
+//     "title": "Homework",
+//     "release_year": 1997,
+//     "formats": [ 
+//       "CD", 
+//       "Cassette", 
+//       "LP"
+//     ],
+//     "gold": true
+//   }
+// ];
+// This is an array which contains one object inside. The object has various pieces of metadata about an album. It also has a nested formats array. If you want to add more album records, you can do this by adding records to the top level array. Objects hold data in a property, which has a key-value format. In the example above, "artist": "Daft Punk" is a property that has a key of artist and a value of Daft Punk.
+
+// Note: You will need to place a comma after every object in the array, unless it is the last object in the array.
+
+  const myMusic = [ {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },{
+      "artist": "Beatles",
+      "title": "Help",
+      "release_year": 1961,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"]
+    }
+  ];
+
+  console.log(myMusic[0].formats[1]);
+  console.log(myMusic[1].title);
+
