@@ -1953,10 +1953,9 @@ function multiplyAll(arr) {
   }
 
   // Only change code above this line
+  console.log(productAB);
   return productAB;
 }
-
-console.log(product);
 
 multiplyAll([
   [1, 2],
