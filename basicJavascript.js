@@ -14,24 +14,24 @@ You can make a multi-line comment beginning with /* and ending with */
 multi-line comment */
 
 //create the variable with My Name
-var myName
+var myName;
 //asig the value 7 to the variable a
 var a;
-a=7;
+a = 7;
 var b;
-b=7;
-b=a;
+b = 7;
+b = a;
 //asign a value at the first
-var c = 9
+var c = 9;
 //create a string values and asign a value
 var myFirstName = "Maria";
 var myLastName = "Rios Navarro";
 
 var d = 5;
 var e = 10;
-var f ="I am a";
+var f = "I am a";
 
-d= d + 1;
+d = d + 1;
 e = e + 5;
 f = f + " String!";
 
@@ -51,10 +51,10 @@ let catSound = "Meow!";
 
 //introduce the difference between let and const. With Const you can not reassigning the value. The console will display an error due to reassigning the value, const is READ-ONLY and can not change
 // It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays).
-const FCC = "freeCodeCamp"; 
-let fact = "is cool!"; 
+const FCC = "freeCodeCamp";
+let fact = "is cool!";
 fact = "is awesome!";
-console.log(FCC, fact); 
+console.log(FCC, fact);
 
 // Add Two Numbers with JavaScript
 const sum = 10 + 10;
@@ -78,7 +78,7 @@ myVarB--;
 
 //Create Decimal Numbers with JavaScript (float numbers)
 const ourDecimal = 5.7;
-const myDecimal= 5.7;
+const myDecimal = 5.7;
 
 //Multiply Two Decimals with JavaScript
 const productDecimal = 2.0 * 2.5;
@@ -87,7 +87,7 @@ const productDecimal = 2.0 * 2.5;
 const quotientDecimal = 4.4 / 2.0;
 
 //Finding a Remainder in JavaScript % (Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.)
-const remainder = 11%3
+const remainder = 11 % 3;
 
 //Compound Assignment With Augmented Addition: += Operator
 let g = 3;
@@ -115,7 +115,7 @@ h /= 4;
 j /= 11;
 
 // Escaping Literal Quotes in Strings: with \ beforr " or '. In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
-const myStrB = "I am a \"double quoted\" string inside \"double quotes\".";
+const myStrB = 'I am a "double quoted" string inside "double quotes".';
 
 // Quoting Strings with Single Quotes. String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote
 // Sometimes we have an ' in the middle of the sentence and if we do not mark it before with \ it will give us an error
@@ -131,7 +131,7 @@ ThirdLine
 
 You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.*/
 
-const myStrD = "FirstLine\n\t\\SecondLine\nThirdLine"
+const myStrD = "FirstLine\n\t\\SecondLine\nThirdLine";
 
 //Explanation:
 /* Escape sequences allow you to use characters you may not otherwise be able to use in a string.
@@ -158,20 +158,17 @@ and -ThirdLine_
 
 */
 
-
 // ***********The headings of each section are marked by ---- before starting.*********
-
-
 
 // ----Concatenating Strings with Plus Operator. Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
 
-const myStrE = "This is the start. " + "This is the end."
+const myStrE = "This is the start. " + "This is the end.";
 
 // ----Concatenating Strings with the Plus Equals Operator. Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself
 
 let myStrF;
 myStrF = "This is the first sentence. ";
-myStrF+= "This is the second sentence.";
+myStrF += "This is the second sentence.";
 
 // ----Constructing Strings with Variables
 // Sometimes you will need to build a string. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
@@ -198,8 +195,7 @@ lastNameLength = lastNameA.length;
 
 let firstLetterOfLastNameB = "";
 const lastNameB = "Rios";
-firstLetterOfLastNameB = lastNameB[0]
-
+firstLetterOfLastNameB = lastNameB[0];
 
 // ----Understand String Immutability. We can asign a new value but not change the value.
 // also we can not do let myStr = "Bob"; myStr[0] = "J"; only we can asign a new value:let myStr = "Bob"; myStr = "Job";
@@ -214,16 +210,15 @@ const thirdLetterOfLastName = lastNameC[2];
 
 // ----Use Bracket Notation to Find the Last Character in a String with .length-1
 const lastNameD = "Ripolles";
-const lastLetterOfLastName = lastNameD[lastNameD.length-1];
+const lastLetterOfLastName = lastNameD[lastNameD.length - 1];
 console.log(lastLetterOfLastName);
-const lastNameE= "Velasco";
-console.log(lastNameE[lastNameE.length-1]);
+const lastNameE = "Velasco";
+console.log(lastNameE[lastNameE.length - 1]);
 
 //---- Use Bracket Notation to Find the Nth-to-Last Character in a String. Works like above
 
-const secondToLastLetterOfLastName = lastNameE [lastNameE.length-2];
+const secondToLastLetterOfLastName = lastNameE[lastNameE.length - 2];
 console.log(secondToLastLetterOfLastName);
-
 
 // ----Word Blanks exercise. You will need to use the string concatenation operator + to build a new string, using the provided variables:
 const myNoun = "dog";
@@ -231,14 +226,18 @@ const myAdjective = "big";
 const myVerb = "ran";
 const myAdverb = "quickly";
 
-const wordBlanks = "Your "+ myAdjective + " "+ myNoun + " "+ myVerb + " "+ myAdverb; 
+const wordBlanks =
+  "Your " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb;
 console.log(wordBlanks);
 
 //---- You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry
 const myArrayA = ["hello", 2];
 
 // ----multi-dimensional array: Nest one Array within Another Array
-const myArrayB =  [["so", "sa"], ["la", "lo"]];
+const myArrayB = [
+  ["so", "sa"],
+  ["la", "lo"],
+];
 
 // ----Access Array Data with Indexes: Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use zero-based indexing,
 const myArrayC = [50, 60, 70];
@@ -247,92 +246,109 @@ console.log(myDataA);
 
 // ----Modify Array Data With Indexes. Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.There shouldn't be any spaces between the array name and the square brackets
 const myArrayD = [18, 64, 99];
-myArrayD[0]=45;
+myArrayD[0] = 45;
 console.log(myArrayD);
 
 // ----Access Multi-Dimensional Arrays With Indexes
 // One way to think of a multi-dimensional array, is as an array of arrays. When you use brackets to access your array, the first set of brackets refers to the entries in the outermost (the first level) array, and each additional pair of brackets refers to the next level of entries inside.
 
 const myArrayE = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-    [[10, 11, 12], 13, 14],
-  ];
-  
-  const myDataB = myArrayE[2][1];
-  const myDataC = myArrayE[3][0][1];
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myDataB = myArrayE[2][1];
+const myDataC = myArrayE[3][0][1];
 
 console.log(myDataB);
 console.log(myDataC);
-
 
 //----.push  --Manipulate Arrays With push Method (add)
 // An easy way to append data to the end of an array is via the push() function.
 
 //one example with the const of before
 
-const myArrayG= [];
-myArrayG.push(myDataB,myDataC);
+const myArrayG = [];
+myArrayG.push(myDataB, myDataC);
 console.log(myArrayG);
 
 //another example
 
-const myArrayF = [["John", 23], ["cat", 2]];
-myArrayF.push(["dog",3]);
+const myArrayF = [
+  ["John", 23],
+  ["cat", 2],
+];
+myArrayF.push(["dog", 3]);
 console.log(myArrayF);
 
 //---- .pop() --removes the last element from an array and returns that element.
 
-const myArrayH = [["John", 23], ["cat", 2]];
-const removedFromMyArrayA= myArrayH.pop();
+const myArrayH = [
+  ["John", 23],
+  ["cat", 2],
+];
+const removedFromMyArrayA = myArrayH.pop();
 console.log(removedFromMyArrayA);
 
 //---- .shift() --removes the first element instead of the last
-const myArrayI = [["John", 23], ["dog", 3]];
-const removedFromMyArrayB= myArrayI.shift();
+const myArrayI = [
+  ["John", 23],
+  ["dog", 3],
+];
+const removedFromMyArrayB = myArrayI.shift();
 console.log(removedFromMyArrayB);
 
 //---- .unshift() --adds the element at the beginning of the array.
-const myArrayJ = [["John", 23], ["dog", 3]];
+const myArrayJ = [
+  ["John", 23],
+  ["dog", 3],
+];
 myArrayJ.shift();
 myArrayJ.unshift(["Paul", 35]);
 console.log(myArrayJ);
 
 //Exercise: Shopping List
 const myListA = [];
-myListA.push(["Chocolate Bar", 15], ["apple", 1], ["banana", 2], ["salad", 3], ["juice", 4]);
-console.log(myListA)
+myListA.push(
+  ["Chocolate Bar", 15],
+  ["apple", 1],
+  ["banana", 2],
+  ["salad", 3],
+  ["juice", 4]
+);
+console.log(myListA);
 
 // ----Write Reusable JavaScript with Functions
 
 function reusableFunction() {
-    console.log("Hola World");
-  }
-  reusableFunction() ;
+  console.log("Hola World");
+}
+reusableFunction();
 
 // ----  Passing Values to Functions with Arguments. Parameters are variables that act as placeholders. The actual values that are input (or "passed") into a function when it is called are known as arguments. you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
 
-function functionWithArgs (numberA, numberB){
-    console.log(numberA+numberB);
-  }
-  functionWithArgs (-3, 10);
+function functionWithArgs(numberA, numberB) {
+  console.log(numberA + numberB);
+}
+functionWithArgs(-3, 10);
 
 // ----Return a Value from a Function with Return .You can use a return statement to send a value back out of a function.
-function timesFive(numberC){
-    return numberC*5;
-  }
-  console.log(timesFive(300));
+function timesFive(numberC) {
+  return numberC * 5;
+}
+console.log(timesFive(300));
 
 //  ---- Global Scope and Functions
 //   In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code. You should always declare your variables with let or const.Exercise:
 
 // Declare the myGlobal variable below this line
-let myGlobal= 10;
+let myGlobal = 10;
 
 function fun1() {
   // Assign 5 to oopsGlobal here
-oopsGlobal=5;
+  oopsGlobal = 5;
 }
 
 // Only change code above this line
@@ -354,17 +370,16 @@ function fun2() {
 // the use of a variable that has been defined in a function, outside this function (e.g. in a console.log) will give an error. Exercise
 
 function myLocalScope() {
-    // Only change code below this line
-    const myVar="hola";
-    console.log('inside myLocalScope', myVar);
-  }
-  myLocalScope();
-  
-  // Run and check the console
-  //myVar is not defined outside of myLocalScope
+  // Only change code below this line
+  const myVar = "hola";
+  console.log("inside myLocalScope", myVar);
+}
+myLocalScope();
 
-  //console.log('outside myLocalScope', myVar); --->ERROR IN THE CONSOLE (i change it to comment)
+// Run and check the console
+//myVar is not defined outside of myLocalScope
 
+//console.log('outside myLocalScope', myVar); --->ERROR IN THE CONSOLE (i change it to comment)
 
 // ----Global vs. Local Scope in Functions
 // It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable. Exercise:
@@ -373,7 +388,7 @@ const outerWear = "T-Shirt";
 
 function myOutfit() {
   // Only change code below this line
-    const outerWear= "sweater";
+  const outerWear = "sweater";
   // Only change code above this line
   return outerWear;
 }
@@ -388,8 +403,8 @@ let sum2 = 0;
 function addThree() {
   sum2 = sum2 + 3;
 }
-function addFive(){
-  sum2= sum2+5;
+function addFive() {
+  sum2 = sum2 + 5;
 }
 
 addThree();
@@ -400,7 +415,6 @@ addFive();
 console.log(addThree);
 console.log(addFive);
 
-
 // ----Assignment with a Returned Value
 // everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.
 
@@ -410,9 +424,7 @@ function processArg(num) {
   return (num + 3) / 5;
 }
 
-
 processed = processArg(7);
-
 
 // -----Stand in Line
 // In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
@@ -421,8 +433,8 @@ processed = processArg(7);
 
 function nextInLine(arr, item) {
   // Only change code below this line
-  const newArrA= arr.push(item);
-  const removedItem= arr.shift();
+  const newArrA = arr.push(item);
+  const removedItem = arr.shift();
   return removedItem;
   // Only change code above this line
 }
@@ -469,13 +481,12 @@ function welcomeToBooleans() {
 
 function trueOrFalse(wasThatTrue) {
   // Only change code below this line
-  if(wasThatTrue){
+  if (wasThatTrue) {
     return "Yes, that was true";
   }
-    return "No, that was false";
+  return "No, that was false";
 
   // Only change code above this line
-
 }
 
 // ---- Comparison with the Equality Operator ==
@@ -497,7 +508,8 @@ function trueOrFalse(wasThatTrue) {
 // "3" ==  3  // true
 
 function testEqual(val) {
-  if (val==12) { // Change this line
+  if (val == 12) {
+    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -514,7 +526,8 @@ console.log(testEqual(10));
 
 // Setup
 function testStrict(val) {
-  if (val === 7) { // Change this line
+  if (val === 7) {
+    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -522,7 +535,6 @@ function testStrict(val) {
 
 testStrict(10);
 console.log(testStrict(10));
-
 
 // ----Practice comparing different values & use of typeof
 // In the last two challenges, we learned about the equality operator (==) and the strict equality operator (===). Let's do a quick review and practice using these operators some more.
@@ -533,19 +545,21 @@ console.log(testStrict(10));
 // typeof 3 returns the string number, and typeof '3' returns the string string.
 
 function compareEquality(a, b) {
-  if (a === b) { // Change this line to do strictly equality operator
+  if (a === b) {
+    // Change this line to do strictly equality operator
     return "Equal";
   }
   return "Not Equal";
 }
 
 compareEquality(10, "10");
-console.log(compareEquality(10, "10"))
+console.log(compareEquality(10, "10"));
 
 //and terminal say Not Equal
 
 function compareEqualityB(c, d) {
-  if (c == d) { // Change this line to do equality operator
+  if (c == d) {
+    // Change this line to do equality operator
     return "Equal";
   }
   return "Not Equal";
@@ -556,12 +570,11 @@ console.log(compareEqualityB(10, "10"));
 
 //and terminal say Equal
 
-
 // ------Comparison with the Inequality Operator !=
 // The inequality operator (!=) is the opposite of the equality operator. It means not equal and returns false where equality would return true and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
 // Examples
 // 1 !=  2    // true
-// 1 != "1"   // false  ---- important!! 
+// 1 != "1"   // false  ---- important!!
 // 1 != '1'   // false
 // 1 != true  // false
 // 0 != false // false
@@ -569,7 +582,8 @@ console.log(compareEqualityB(10, "10"));
 
 // Setup
 function testNotEqual(val) {
-  if (val!=99) { // Change this line
+  if (val != 99) {
+    // Change this line
     return "Not Equal";
   }
   return "Equal";
@@ -587,10 +601,10 @@ console.log(testNotEqual(10));
 // 3 !== '3' // true
 // 4 !==  3  // true
 
-
 // Setup
 function testStrictNotEqual(val) {
-  if (val !== 17) { // Change this line
+  if (val !== 17) {
+    // Change this line
     return "Not Equal";
   }
   return "Equal";
@@ -598,7 +612,6 @@ function testStrictNotEqual(val) {
 
 testStrictNotEqual(10);
 console.log(testStrictNotEqual(10));
-
 
 // -----Comparison with the Greater Than Operator  >
 // The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
@@ -610,11 +623,13 @@ console.log(testStrictNotEqual(10));
 // '1' >  9  // false
 
 function testGreaterThan(val) {
-  if (val > 100) {  // Change this line
+  if (val > 100) {
+    // Change this line
     return "Over 100";
   }
 
-  if (val > 10 ) {  // Change this line
+  if (val > 10) {
+    // Change this line
     return "Over 10";
   }
 
@@ -622,7 +637,7 @@ function testGreaterThan(val) {
 }
 
 testGreaterThan(10);
-console.log (testGreaterThan(10));
+console.log(testGreaterThan(10));
 
 // -------Comparison with the Greater Than Or Equal To Operator  >=
 // The greater than or equal to operator (>=) compares the values of two numbers. If the number to the left is greater than or equal to the number to the right, it returns true. Otherwise, it returns false.
@@ -634,11 +649,13 @@ console.log (testGreaterThan(10));
 // '7' >=  9  // false
 
 function testGreaterOrEqual(val) {
-  if (val >=20) {  // Change this line
+  if (val >= 20) {
+    // Change this line
     return "20 or Over";
   }
 
-  if (val>=10) {  // Change this line
+  if (val >= 10) {
+    // Change this line
     return "10 or Over";
   }
 
@@ -652,11 +669,13 @@ console.log(testGreaterOrEqual(10));
 // The less than operator (<) compares the values of two numbers. If the number to the left is less than the number to the right, it returns true. Otherwise, it returns false. Like the equality operator, the less than operator converts data types while comparing.
 
 function testLessThan(val) {
-  if (val<25) {  // Change this line
+  if (val < 25) {
+    // Change this line
     return "Under 25";
   }
 
-  if (val<55) {  // Change this line
+  if (val < 55) {
+    // Change this line
     return "Under 55";
   }
 
@@ -670,11 +689,13 @@ console.log(testLessThan(10));
 // The less than or equal to operator (<=) compares the values of two numbers. If the number to the left is less than or equal to the number to the right, it returns true. If the number on the left is greater than the number on the right, it returns false. Like the equality operator, the less than or equal to operator converts data types.
 
 function testLessOrEqual(val) {
-  if (val <=12) {  // Change this line
+  if (val <= 12) {
+    // Change this line
     return "Smaller Than or Equal to 12";
   }
 
-  if (val <=24) {  // Change this line
+  if (val <= 24) {
+    // Change this line
     return "Smaller Than or Equal to 24";
   }
 
@@ -702,15 +723,12 @@ console.log(testLessOrEqual(10));
 // }
 // return "No";
 
-
 function testLogicalAnd(val) {
   // Only change code below this line
 
-  if (val <=50 && val>=25) {
-
-      return "Yes";
-    }
-  
+  if (val <= 50 && val >= 25) {
+    return "Yes";
+  }
 
   // Only change code above this line
   return "No";
@@ -719,8 +737,7 @@ function testLogicalAnd(val) {
 testLogicalAnd(10);
 console.log(testLogicalAnd(10));
 
-
-// -----Comparisons with the Logical Or Operator || 
+// -----Comparisons with the Logical Or Operator ||
 // The logical or operator (||) returns true if either of the operands is true. Otherwise, it returns false.
 
 // The logical or operator is composed of two pipe symbols: (||). This can typically be found between your Backspace and Enter keys.
@@ -744,10 +761,9 @@ console.log(testLogicalAnd(10));
 function testLogicalOr(val) {
   // Only change code below this line
 
-  if (val>20 || (val<10)) {
+  if (val > 20 || val < 10) {
     return "Outside";
   }
-
 
   // Only change code above this line
   return "Inside";
@@ -755,7 +771,6 @@ function testLogicalOr(val) {
 
 testLogicalOr(15);
 console.log(testLogicalOr(15));
-
 
 // ----- Introducing Else Statements if(){}else{}
 // When a condition for an if statement is true, the block of code following it is executed. What about when that condition is false? Normally nothing would happen. With an else statement, an alternate block of code can be executed.
@@ -794,16 +809,14 @@ console.log(testElse(15));
 //   return "Between 5 and 15";
 // }
 
-
-
 function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
   } else if (val < 5) {
     return "Smaller than 5";
   } else {
-      return "Between 5 and 10";
-    }
+    return "Between 5 and 10";
+  }
 }
 
 testElseIf(7);
@@ -811,7 +824,7 @@ console.log(testElseIf(2));
 console.log(testElseIf(8));
 console.log(testElseIf(10));
 
-// -------Logical Order in If Else Statements 
+// -------Logical Order in If Else Statements
 // Order is important in if, else if statements.
 
 // The function is executed from top to bottom so you will want to be careful of what statement comes first.
@@ -846,7 +859,6 @@ console.log(testElseIf(10));
 // bar(0)
 // foo(0) will return the string Less than one, and bar(0) will return the string Less than two.
 
-
 function orderMyLogicA(val) {
   if (val < 10) {
     return "Less than 10";
@@ -861,22 +873,21 @@ orderMyLogicA(7);
 console.log(orderMyLogicA(7));
 console.log(orderMyLogicA(4));
 
-
 function orderMyLogicB(val) {
   if (val < 5) {
     return "Less than 5";
-  } else  if (val < 10) {
+  } else if (val < 10) {
     return "Less than 10";
-    } else {
-      return "Greater than or equal to 10";
-      }
+  } else {
+    return "Greater than or equal to 10";
+  }
 }
 
 orderMyLogicB(7);
 console.log(orderMyLogicB(7));
 console.log(orderMyLogicB(4));
 
-// -----Chaining If Else Statements if(con1){}else if(con2){} else if(con3){} else{statementN}  
+// -----Chaining If Else Statements if(con1){}else if(con2){} else if(con3){} else{statementN}
 // if/else statements can be chained together for complex logic. Here is pseudocode of multiple chained if / else if statements:
 
 // if (condition1) {
@@ -892,25 +903,25 @@ console.log(orderMyLogicB(4));
 
 function testSize(num) {
   // Only change code below this line
-  if(num < 5){
+  if (num < 5) {
     return "Tiny";
-    }else if(num<10){
-      return "Small";
-      }else if(num<15){
-        return "Medium";
-        }else if(num<20){
-          return "Large";
-          }else if(num>=20){
-            return "Huge";
-          } else {
-  return "Change Me";
-  // Only change code above this line
-}
+  } else if (num < 10) {
+    return "Small";
+  } else if (num < 15) {
+    return "Medium";
+  } else if (num < 20) {
+    return "Large";
+  } else if (num >= 20) {
+    return "Huge";
+  } else {
+    return "Change Me";
+    // Only change code above this line
+  }
 }
 testSize(7);
 console.log(testSize(7));
 
-// ---- Exercise Chaining If Else Statements 
+// ---- Exercise Chaining If Else Statements
 // Golf Code
 // In the game of Golf, each hole has a par, meaning, the average number of strokes a golfer is expected to make in order to sink the ball in the hole to complete the play. Depending on how far above or below par your strokes are, there is a different nickname.
 
@@ -926,8 +937,15 @@ console.log(testSize(7));
 // >= par + 3	"Go Home!"
 // par and strokes will always be numeric and positive. We have added an array of all the names for your convenience.
 
-
-const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+const names = [
+  "Hole-in-one!",
+  "Eagle",
+  "Birdie",
+  "Par",
+  "Bogey",
+  "Double Bogey",
+  "Go Home!",
+];
 
 function golfScore(par, strokes) {
   // Only change code below this line
@@ -986,24 +1004,23 @@ console.log(golfScore(4, 9));
 function caseInSwitch(val) {
   let answer = "";
   // Only change code below this line
-  switch(val){
+  switch (val) {
     case 1:
-      answer="alpha";
+      answer = "alpha";
       console.log(answer);
       break;
     case 2:
-      answer="beta";
+      answer = "beta";
       console.log(answer);
       break;
     case 3:
-      answer="gamma";
+      answer = "gamma";
       console.log(answer);
       break;
     case 4:
-      answer="delta";
+      answer = "delta";
       console.log(answer);
       break;
-
   }
 
   // Only change code above this line
@@ -1032,39 +1049,37 @@ caseInSwitch(4);
 //     break;
 // }
 
-
 function switchOfStuff(val) {
   let answer = "";
   // Only change code below this line
 
-  switch(val){
-    case "a" :
-     answer="apple";
-     console.log(answer);
-     break;
-    case "b" :
-     answer="bird";
-     console.log(answer);
-     break;
-    case "c" :
-     answer="cat";
-     console.log(answer);
-     break;
+  switch (val) {
+    case "a":
+      answer = "apple";
+      console.log(answer);
+      break;
+    case "b":
+      answer = "bird";
+      console.log(answer);
+      break;
+    case "c":
+      answer = "cat";
+      console.log(answer);
+      break;
     default:
-     answer="stuff"
-     console.log (answer);
-    break;
+      answer = "stuff";
+      console.log(answer);
+      break;
   }
   // Only change code above this line
   return answer;
 }
 
-switchOfStuff(1);  // console say stuff
+switchOfStuff(1); // console say stuff
 switchOfStuff("c"); // console say cat
 switchOfStuff(a); //console say stuff, becouse case values are tested with strict equality (===), also a ist no the same to "a"
 
-
-// ----Multiple Identical Options in Switch Statements 
+// ----Multiple Identical Options in Switch Statements
 // If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If you have multiple inputs with the same output, you can represent them in a switch statement like this:
 
 // let result = "";
@@ -1082,28 +1097,26 @@ switchOfStuff(a); //console say stuff, becouse case values are tested with stric
 function sequentialSizes(val) {
   let answer = "";
   // Only change code below this line
-    switch(val) {
-      case 1:
-      case 2:
-      case 3:
-        answer="Low";
-        console.log(answer);
-        break;
-      case 4:
-      case 5:
-      case 6:
-        answer="Mid";
-        console.log(answer);
-        break;
-      case 7:
-      case 8:
-      case 9:
-        answer="High"
-        console.log(answer);
-        break;
-    }
-
-
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      console.log(answer);
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      console.log(answer);
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      console.log(answer);
+      break;
+  }
 
   // Only change code above this line
   return answer;
@@ -1139,8 +1152,8 @@ sequentialSizes(7);
 function chainToSwitch(val) {
   let answer = "";
   // Only change code below this line
-  switch(val) {
-   case "bob":
+  switch (val) {
+    case "bob":
       answer = "Marley";
       break;
     case 42:
@@ -1189,17 +1202,15 @@ console.log(chainToSwitch(99));
 //   return a === b;
 // }
 
-
 function isLess(a, b) {
   // Only change code below this line
-   return a < b; 
-    
+  return a < b;
 
   // Only change code above this line
 }
 
 isLess(10, 15);
-console.log(isLess(10,15));
+console.log(isLess(10, 15));
 
 // Return Early Pattern for Functions
 // When a return statement is reached, the execution of the current function stops and control returns to the calling location.
@@ -1219,18 +1230,17 @@ console.log(isLess(10,15));
 // Setup
 function abTest(a, b) {
   // Only change code below this line
-   if (a<0||b<0) {
-     return undefined;
-   }
-
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
 
   // Only change code above this line
 
   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 
-abTest(2,2);
-console.log(abTest(2,2));
+abTest(2, 2);
+console.log(abTest(2, 2));
 
 // -------Exercise:
 // Counting Cards
@@ -1251,8 +1261,6 @@ console.log(abTest(2,2));
 // Do NOT return an array.
 // Do NOT include quotes (single or double) in the output.
 
-
-
 let count = 0;
 
 function cc(card) {
@@ -1266,10 +1274,10 @@ function cc(card) {
       count++;
       break;
     case 10:
-    case 'J':
-    case 'Q':
-    case 'K':
-    case 'A':
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
       count--;
       break;
     default:
@@ -1277,20 +1285,23 @@ function cc(card) {
   }
   // Determine whether to Bet or Hold based on the current count
   if (count > 0) {
-    return count + ' Bet';
+    return count + " Bet";
   } else {
-    return count + ' Hold';
+    return count + " Hold";
   }
 }
 
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+cc(2);
+cc(3);
+cc(7);
+cc("K");
+cc("A");
 
 console.log(cc(2));
 console.log(cc(3));
 console.log(cc(7));
 console.log(cc("K"));
 console.log(cc("A"));
-
 
 // ------Build JavaScript Objects const object={ propiertyA: , propiertyB: ,propiertyC:  }
 // You may have heard the term object before.
@@ -1319,10 +1330,10 @@ console.log(cc("A"));
 
 const myDog = {
   // Only change code below this line
-  "name": "WOW",
-  "legs": 3,
-  "tails": 1,
-  friends:["me","you"]
+  name: "WOW",
+  legs: 3,
+  tails: 1,
+  friends: ["me", "you"],
 
   // Only change code above this line
 };
@@ -1345,16 +1356,16 @@ const myDog = {
 
 // Setup
 const testObj = {
-  "hat": "ballcap",
-  "shirt": "jersey",
-  "shoes": "cleats"
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats",
 };
 
 // Only change code below this line
-const hatValue = testObj.hat;      // Change this line
-const shirtValue = testObj.shirt;    // Change this line
+const hatValue = testObj.hat; // Change this line
+const shirtValue = testObj.shirt; // Change this line
 
-// -----Accessing Object Properties with Bracket Notation 
+// -----Accessing Object Properties with Bracket Notation
 
 // The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
 
@@ -1379,12 +1390,12 @@ const shirtValue = testObj.shirt;    // Change this line
 const testObj2 = {
   "an entree": "hamburger",
   "my side": "veggies",
-  "the drink": "water"
+  "the drink": "water",
 };
 
 // Only change code below this line
-const entreeValue = testObj2["an entree"];   // Change this line
-const drinkValue = testObj2["the drink"];    // Change this line
+const entreeValue = testObj2["an entree"]; // Change this line
+const drinkValue = testObj2["the drink"]; // Change this line
 
 //------Accessing Object Properties with Variables
 // Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
@@ -1408,18 +1419,18 @@ const drinkValue = testObj2["the drink"];    // Change this line
 const testObjC = {
   12: "Namath",
   16: "Montana",
-  19: "Unitas"
+  19: "Unitas",
 };
 
 // Only change code below this line
-const playerNumber = 16;  // Change this line
-const player = testObjC[playerNumber];   // Change this line
+const playerNumber = 16; // Change this line
+const player = testObjC[playerNumber]; // Change this line
 
 console.log(player);
 console.log(testObjC[16]);
 
 // ---------Updating Object Properties:   obejct.propiertyA =""  or object[propiertyA]=""
-// After you've created a JavaScript object, you can update its properties at any time just like 
+// After you've created a JavaScript object, you can update its properties at any time just like
 // you would update any other variable. You can use either dot or bracket notation to update.
 
 // For example, let's look at ourDog:
@@ -1430,21 +1441,21 @@ console.log(testObjC[16]);
 //   "tails": 1,
 //   "friends": ["everything!"]
 // };
-// Since he's a particularly happy dog, let's change his name to the string Happy Camper. 
+// Since he's a particularly happy dog, let's change his name to the string Happy Camper.
 //        Here's how we update his object's name property:
-//  ourDog.name = "Happy Camper"; or ourDog["name"] = "Happy Camper"; 
- 
+//  ourDog.name = "Happy Camper"; or ourDog["name"] = "Happy Camper";
+
 //  Now when we evaluate ourDog.name, instead of getting Camper, we'll get his new name, Happy Camper.
 
 // Setup
 const myDogA = {
-  "name": "Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"]
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
 };
 
-myDogA["name"]="Happy Coder"
+myDogA["name"] = "Happy Coder";
 // Only change code below this line
 
 // ---------Add New Properties to a JavaScript Object
@@ -1457,15 +1468,15 @@ myDogA["name"]="Happy Coder"
 // ourDog["bark"] = "bow-wow";
 
 const myDogB = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"]
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
 };
 
-myDogB["bark"]="woof";
+myDogB["bark"] = "woof";
 
-console.log (myDogB);
+console.log(myDogB);
 
 // ------Delete Properties from a JavaScript Object    delete object.propiertyA   delete object["propiertyA"]
 // We can also delete properties from objects like this:
@@ -1475,11 +1486,11 @@ console.log (myDogB);
 
 // Setup
 const myDogC = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"],
-  "bark": "woof"
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+  bark: "woof",
 };
 delete myDogC["tails"];
 console.log(myDogC);
@@ -1513,24 +1524,22 @@ function phoneticLookup(val) {
 
   // Only change code below this line
 
-  const lookup ={
-   "alpha":"Adams",
-   "bravo":"Boston",
-   "charlie":"Chicago",
-   "delta": "Denver",
-   "echo": "Easy",
-   "foxtrot":"Frank",
-    "": undefined
-  }
-    result = lookup[val];
+  const lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+    "": undefined,
+  };
+  result = lookup[val];
   // Only change code above this line
   return result;
 }
 
 phoneticLookup("charlie");
-console.log(phoneticLookup("charlie"))
-
-
+console.log(phoneticLookup("charlie"));
 
 // ---------Testing Objects for Properties  .hasOwnProperty(propname)
 // Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not.
@@ -1539,7 +1548,7 @@ console.log(phoneticLookup("charlie"))
 
 const myObj = {
   top: "hat",
-  bottom: "pants"
+  bottom: "pants",
 };
 
 myObj.hasOwnProperty("top");
@@ -1549,18 +1558,16 @@ console.log(myObj.hasOwnProperty("middle"));
 
 // The first hasOwnProperty returns true, while the second returns false.
 
+// I have to mark this exercise (below) as a comment otherwise it gives an error in the command line because checkProp is not defined.
+// Check if obj has the property checkProp using hasOwnProperty
+// if (objA.hasOwnProperty(checkProp)) {     // If the property is found, return its value
+//   return objA[checkProp];
+// } else {
+//   // If the property is not found, return "Not Found"
+//   return "Not Found";
+// }
 
-  // I have to mark this exercise (below) as a comment otherwise it gives an error in the command line because checkProp is not defined.
-  // Check if obj has the property checkProp using hasOwnProperty
-  // if (objA.hasOwnProperty(checkProp)) {     // If the property is found, return its value
-  //   return objA[checkProp];
-  // } else {
-  //   // If the property is not found, return "Not Found"
-  //   return "Not Found";
-  // }
-
-  // ----------------------------
-
+// ----------------------------
 
 // --------  Manipulating Complex Objects
 // Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects.
@@ -1572,9 +1579,9 @@ console.log(myObj.hasOwnProperty("middle"));
 //     "artist": "Daft Punk",
 //     "title": "Homework",
 //     "release_year": 1997,
-//     "formats": [ 
-//       "CD", 
-//       "Cassette", 
+//     "formats": [
+//       "CD",
+//       "Cassette",
 //       "LP"
 //     ],
 //     "gold": true
@@ -1584,29 +1591,24 @@ console.log(myObj.hasOwnProperty("middle"));
 
 // Note: You will need to place a comma after every object in the array, unless it is the last object in the array.
 
-  const myMusic = [ {
-      "artist": "Billy Joel",
-      "title": "Piano Man",
-      "release_year": 1973,
-      "formats": [
-        "CD",
-        "8T",
-        "LP"
-      ],
-      "gold": true
-    },{
-      "artist": "Beatles",
-      "title": "Help",
-      "release_year": 1961,
-      "formats": [
-        "CD",
-        "8T",
-        "LP"]
-    }
-  ];
+const myMusic = [
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+  {
+    artist: "Beatles",
+    title: "Help",
+    release_year: 1961,
+    formats: ["CD", "8T", "LP"],
+  },
+];
 
-  console.log(myMusic[0].formats[1]);
-  console.log(myMusic[1].title);
+console.log(myMusic[0].formats[1]);
+console.log(myMusic[1].title);
 
 // -----------  Accessing Nested Objects
 // The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
@@ -1618,7 +1620,7 @@ console.log(myObj.hasOwnProperty("middle"));
 //     "drawer": "stapler"
 //   },
 //   "cabinet": {
-//     "top drawer": { 
+//     "top drawer": {
 //       "folder1": "a file",
 //       "folder2": "secrets"
 //     },
@@ -1630,17 +1632,16 @@ console.log(myObj.hasOwnProperty("middle"));
 // ourStorage.desk.drawer;
 // ourStorage.cabinet["top drawer"].folder2 would be the string secrets, and ourStorage.desk.drawer would be the string stapler
 
-
 const myStorage = {
-  "car": {
-    "inside": {
+  car: {
+    inside: {
       "glove box": "maps",
-      "passenger seat": "crumbs"
-     },
-    "outside": {
-      "trunk": "jack"
-    }
-  }
+      "passenger seat": "crumbs",
+    },
+    outside: {
+      trunk: "jack",
+    },
+  },
 };
 
 const gloveBoxContents = myStorage.car.inside["glove box"];
@@ -1674,27 +1675,16 @@ console.log(gloveBoxContents);
 // ourPets[1].names[0];
 // ourPets[0].names[1] would be the string Fluffy, and ourPets[1].names[0] would be the string Spot.
 
-
-
 const myPlants = [
   {
     type: "flowers",
-    list: [
-      "rose",
-      "tulip",
-      "dandelion"
-    ]
+    list: ["rose", "tulip", "dandelion"],
   },
   {
     type: "trees",
-    list: [
-      "fir",
-      "pine",
-      "birch"
-    ]
-  }
+    list: ["fir", "pine", "birch"],
+  },
 ];
-
 
 const secondTree = myPlants[1].list[1];
 console.log(secondTree);
@@ -1719,22 +1709,22 @@ console.log(secondTree);
 // Setup
 const recordCollection = {
   2548: {
-    albumTitle: 'Slippery When Wet',
-    artist: 'Bon Jovi',
-    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    albumTitle: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let It Rock", "You Give Love a Bad Name"],
   },
   2468: {
-    albumTitle: '1999',
-    artist: 'Prince',
-    tracks: ['1999', 'Little Red Corvette']
+    albumTitle: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
   },
   1245: {
-    artist: 'Robert Palmer',
-    tracks: []
+    artist: "Robert Palmer",
+    tracks: [],
   },
   5439: {
-    albumTitle: 'ABBA Gold'
-  }
+    albumTitle: "ABBA Gold",
+  },
 };
 
 function updateRecords(records, id, prop, value) {
@@ -1744,11 +1734,11 @@ function updateRecords(records, id, prop, value) {
     let album = records[id];
 
     // Check if value is an empty string, if so, delete the prop property from the album
-    if (value === '') {
+    if (value === "") {
       delete album[prop];
     } else {
       // Check if prop is 'tracks'
-      if (prop === 'tracks') {
+      if (prop === "tracks") {
         // Check if the album already has a tracks property, if not, create one as an array
         if (!album.hasOwnProperty(prop)) {
           album[prop] = [];
@@ -1766,25 +1756,30 @@ function updateRecords(records, id, prop, value) {
 }
 
 // Test the function with the provided recordCollection object
-const updatedRecordCollection = updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+const updatedRecordCollection = updateRecords(
+  recordCollection,
+  5439,
+  "artist",
+  "ABBA"
+);
 console.log(updatedRecordCollection);
 
 // https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-record-collection/18261 SOLUTIONS:
 
-            //  SOLUTION A
+//  SOLUTION A
 
-              // // function updateRecords(records, id, prop, value) {
-              //   if (value === "") {
-              //     delete records[id][prop];
-              //   } else if (prop !== "tracks" && value !== "") {
-              //     records[id][prop] = value;
-              //   } else if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
-              //     records[id][prop] = [value];
-              //   } else if (prop === "tracks" && value !== "") {
-              //     records[id][prop].push(value);
-              //   }
-              //   return records;
-              // }
+// // function updateRecords(records, id, prop, value) {
+//   if (value === "") {
+//     delete records[id][prop];
+//   } else if (prop !== "tracks" && value !== "") {
+//     records[id][prop] = value;
+//   } else if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
+//     records[id][prop] = [value];
+//   } else if (prop === "tracks" && value !== "") {
+//     records[id][prop].push(value);
+//   }
+//   return records;
+// }
 
 // Code Explanation
 // This version of the code explicitly handles every possible case with separate if clauses.
@@ -1795,54 +1790,52 @@ console.log(updatedRecordCollection);
 // It next checks if prop is equal to tracks, the value is not an empty string. The "tracks" array must exist because the case above was not true. The value is pushed onto the end of the "tracks" array.
 // Lastly, the entire records object is returned.
 
-            //  SOLUTION B
-            // function updateRecords(records, id, prop, value) {
-            //   if (value === '') {
-            //     delete records[id][prop];
-            //   } else if (prop === "tracks") {
-            //     records[id][prop] = records[id][prop] || []; // shortcircuit evaluation
-            //     records[id][prop].push(value);
-            //   } else {
-            //     records[id][prop] = value;
-            //   }
-            //   return records;
-            // }
+//  SOLUTION B
+// function updateRecords(records, id, prop, value) {
+//   if (value === '') {
+//     delete records[id][prop];
+//   } else if (prop === "tracks") {
+//     records[id][prop] = records[id][prop] || []; // shortcircuit evaluation
+//     records[id][prop].push(value);
+//   } else {
+//     records[id][prop] = value;
+//   }
+//   return records;
+// }
 
 //  Code Explanation
-// This solution re-orders the code to make the if clauses simpler.           
+// This solution re-orders the code to make the if clauses simpler.
 // First checks if value is a blank string. If so, then the key (prop) is removed from the object.
 // If that first check doesn’t pass, then we know that value is not a blank string. It next checks if prop is equal to "tracks". The "tracks" array is initialized if it does not exist, and then value is pushed into the tracks array. (This step uses shortcircuit evaluation)
 // If both these checks fail (meaning value is not an empty string and prop is not "tracks"), then either a new key (prop) and value (value) are added to the object, or an existing key is updated if the prop already exists.
 // Lastly, the entire records object is returned.
 // Example Run
-            
+
 //   updateRecords(5439, "artist", "ABBA"); runs.
 // value is not a blank string, so the first condition of the else if statement fails.
 // prop is equal to "artist", not "tracks", so the second condition of the else if statement fails.
 // in the ‘else’ clause, artist: "ABBA" is added to the 5439 id.
 
+//  SOLUTION C
 
-            //  SOLUTION C
-
-            // function updateRecords(records, id, prop, value) {
-            //   // Access target album in record collection
-            //   const album = records[id];
-            //   // Update the album
-            //   if (value === "") {
-            //     delete album[prop];
-            //   } else if (prop !== "tracks") {
-            //     album[prop] = value;
-            //   } else {
-            //     album["tracks"] = album["tracks"] || [];
-            //     album["tracks"].push(value);
-            //   }
-            //   // Return the full collection
-            //   return records;
-            // }
+// function updateRecords(records, id, prop, value) {
+//   // Access target album in record collection
+//   const album = records[id];
+//   // Update the album
+//   if (value === "") {
+//     delete album[prop];
+//   } else if (prop !== "tracks") {
+//     album[prop] = value;
+//   } else {
+//     album["tracks"] = album["tracks"] || [];
+//     album["tracks"].push(value);
+//   }
+//   // Return the full collection
+//   return records;
+// }
 
 // Code Explanation
 // This solution uses the fact that objects are passed into functions as references to slightly simplify the solution syntax.
-
 
 // ----------------Iterate with JavaScript While Loops  while(){}
 // You can run the same code multiple times by using a loop.
@@ -1858,11 +1851,11 @@ console.log(updatedRecordCollection);
 // }
 // In the code example above, the while loop will execute 5 times and append the numbers 0 through 4 to ourArray.
 
-const myArrayK= [];
-let i=5;
-while (i <= 5 && i>=0) {
+const myArrayK = [];
+let i = 5;
+while (i <= 5 && i >= 0) {
   myArrayK.push(i);
-  i--
+  i--;
 }
 console.log(myArrayK);
 
@@ -1884,7 +1877,7 @@ console.log(myArrayK);
 // ourArray will now have the value [0, 1, 2, 3, 4].
 
 let myArrayM = [];
-for (let j=1; j<=5; j++){
+for (let j = 1; j <= 5; j++) {
   myArrayM.push(j);
 }
 console.log(myArrayM);
@@ -1901,7 +1894,7 @@ console.log(myArrayM);
 // }
 // ourArray will now contain [0, 2, 4, 6, 8]. Let's change our initialization so we can count by odd numbers.
 const myArrayN = [];
-for (let k=1; k<=9; k+=2){
+for (let k = 1; k <= 9; k += 2) {
   myArrayN.push(k);
 }
 console.log(myArrayN);
@@ -1922,11 +1915,10 @@ console.log(myArrayN);
 
 const myArrayO = [];
 
-for(let l=9; l>0; l-=2){
+for (let l = 9; l > 0; l -= 2) {
   myArrayO.push(l);
 }
 console.log(myArrayO);
-
 
 // --------------Iterate Through an Array with a For Loop
 // A common task in JavaScript is to iterate through the contents of an array. One way to do that is with a for loop. This code will output each element of the array arr to the console:
@@ -1939,9 +1931,35 @@ console.log(myArrayO);
 // Remember that arrays have zero-based indexing, which means the last index of the array is length - 1. Our condition for this loop is i < arr.length, which stops the loop when i is equal to length. In this case the last iteration is i === 4 i.e. when i becomes equal to arr.length - 1 and outputs 6 to the console. Then i increases to 5, and the loop terminates because i < arr.length is false.
 
 const myArrA = [2, 3, 4, 5, 6];
-let totalA= 0 ;
-for (let i=0; i < myArrA.length; i++){
-   totalA = totalA + myArrA[i];
+let totalA = 0;
+for (let i = 0; i < myArrA.length; i++) {
+  totalA = totalA + myArrA[i];
 }
 console.log(totalA);
 
+// -----------------------Nesting For Loops
+// If you have a multi-dimensional array,
+//  you can use the same logic as the prior waypoint
+//  to loop through both the array and any sub-arrays.
+//  Here is an example:
+
+function multiplyAll(arr) {
+  let productAB = 1;
+  // Only change code below this line
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      productAB = productAB * arr[i][j];
+    }
+  }
+
+  // Only change code above this line
+  return productAB;
+}
+
+console.log(product);
+
+multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7],
+]);
