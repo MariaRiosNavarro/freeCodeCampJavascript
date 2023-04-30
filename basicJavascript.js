@@ -2052,7 +2052,6 @@ let arrayZ = [1, 3, 2, 6, 8];
 let sumMMM = sumM(arrayZ, 3);
 console.log(sumMMM);
 
-
 // -----------------Profile Lookup
 // We have an array of objects representing different people in our contacts lists.
 
@@ -2095,7 +2094,6 @@ const contactsSS = [
 ];
 
 function lookUpProfile(name, prop) {
-
   // Only change code below this line
   for (let i = 0; i < contactsSS.length; i++) {
     if (contactsSS[i].firstName === name) {
@@ -2113,7 +2111,6 @@ function lookUpProfile(name, prop) {
 
 lookUpProfile("Akira", "likes");
 
-
 // Code Explanation
 // The for loop runs, starting at the first object in the contacts list.
 // If the firstName parameter passed into the function matches the value of the "firstName" key in the first object, the if statement passes.
@@ -2127,7 +2124,6 @@ lookUpProfile("Akira", "likes");
 // "Akira" is matched to the "firstName" key in the first object, so the if statement returns true.
 // "likes" is found within the first object, so the second if statement returns true.
 // The value of "likes" is returned - "Pizza", "Coding", "Brownie Points".
-
 
 // Solution 2 (Click to Show/Hide)
 // function lookUpProfile(name, prop) {
@@ -2145,9 +2141,6 @@ lookUpProfile("Akira", "likes");
 // Code Explanation
 // This works as the last example but uses the in operator to look for prop instead of the hasOwnProperty() method.
 
-
-
-
 // ----------------Generate Random Fractions with JavaScript
 
 // Random numbers are useful for creating random behavior.
@@ -2159,15 +2152,12 @@ lookUpProfile("Akira", "likes");
 // Change randomFraction to return a random number instead of returning 0.
 
 function randomFraction() {
-
   // Only change code below this line
 
   return Math.random();
 
   // Only change code above this line
 }
-
-
 
 // ------------Generate Random Whole Numbers with JavaScript  Math.floor(Math.random() * n);
 // You can generate random decimal numbers with Math.random(), but sometimes you need to generate random whole numbers. The following process will give you a random whole number less than 20:
@@ -2185,7 +2175,5 @@ function randomFraction() {
 // Use this technique to generate and return a random whole number in the range from 0 to 9.
 
 function randomWholeNum() {
-  return Math.floor(Math.random() * 10);;
+  return Math.floor(Math.random() * 10);
 }
-
-
