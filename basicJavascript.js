@@ -2178,7 +2178,6 @@ function randomWholeNum() {
   return Math.floor(Math.random() * 10);
 }
 
-
 // ---------------Generate Random Whole Numbers within a Range: Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 // You can generate a random whole number in the range from zero to a given number. You can also pick a different lower number for this range.
 
@@ -2193,4 +2192,23 @@ function randomRange(myMin, myMax) {
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 }
 
-console.log(randomRange(23,37));
+console.log(randomRange(23, 37));
+
+// ----------Use the parseInt Function
+// The parseInt() function parses a string and returns an integer. Here's an example:
+
+// const a = parseInt("007");
+// The above function converts the string 007 to the integer 7. If the first character in the string can't be converted into a number, then it returns NaN.
+
+// Use parseInt() in the convertToInteger function so it converts the input string str into an integer, and returns it.
+
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
+convertToInteger("57");
+convertToInteger("77");
+convertToInteger("JamesBond");
+
+console.log(convertToInteger("56"));
