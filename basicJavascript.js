@@ -2237,3 +2237,4 @@ function convertToInteger(str) {
   convertToInteger("10011");
   convertToInteger("111001");
   convertToInteger("JamesBond");
+
